@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#File Managed by Puppet
+
+export SCALA_HOME=<%= scope.lookupvar('scala::params::scala_base') %>/scala-<%= scope.lookupvar('scala::params::scala_version') %>
+export PATH=$PATH:$SCALA_HOME/bin
